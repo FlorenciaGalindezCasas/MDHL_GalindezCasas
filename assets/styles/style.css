@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comic Sans MS", "Comic Sans";    
+}
+
+.home{
+    background:rgba(229, 221, 221, 0.461) url("../img/hockey_1.jpg");    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:lighten;    
+}
+
+.about{
+    background:rgba(229, 221, 221, 0.461)url("../img/hockey_2.jpg");    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:lighten;
+}
+
+.contact{
+    background:rgba(229, 221, 221, 0.461)url("../img/hockey_3.jpg");    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:lighten;
+}
+
+.btn{
+     position: absolute;
+     left: 75.5vw;
+     top: 6vh;
+}
+
+button{
+    background-color: rgb(94, 94, 246); 
+    color: white;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 3px 3px rgba(0,0,0,0.5);
+}
+
+/* El boton cambia de color al hacer click 2 veces */
+button:active{
+    background-color: rgb(124, 212, 124);
+}
+
+button:focus{
+    background-color: rgb(124, 212, 124);
+}
+
+header img{
+    width: 100%;
+    height: 28rem;
+}
+
+header img:hover{
+    opacity: 0.2    
+}
+
+h1{
+    font-size: 45px;
+}
+
+h2{
+    text-align: center;
+    border: solid 1px;
+    margin-top:-5px;
+}
+
+section img{
+    width: 10%;
+    margin-left: 5%;
+}
+
+section div{
+    display: inline-block;
+    text-align: justify;
+    font-size: 22px;
+}
+
+.homeSection div{
+    position: relative;
+    bottom: 5px;
+    left: 10%;
+}
+
+.aboutSection div{
+    position: relative;
+    left: 10%;
+    bottom: 5px;
+    width: 65%;
+}
+
+.contactSection div{
+    position: relative;
+    left:10%;
+    bottom:80px;
+}
+
+.aboutSection img{
+    padding-bottom: 230px;   
+}
+
+.contactSection img{
+    margin-top: 17px;
+}
+
+
+    
