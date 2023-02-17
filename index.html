@@ -1,21 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mighty Ducks Hockey League</title>
-    <link rel="icon" href="./assets/img/hockey-sobre-hielo.ico" />
-    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" href="./assets/img/hockey-sobre-hielo.ico">
+    <link rel="stylesheet" href="./assets/styles/style.css">
   </head>
-  <body>
-    <main class="principal">
-      <img src="./assets/img/logo.png" alt="Logo" />
-      <div>
-        <button onclick="location.href='./home.html'">HOME</button>
-        <button onclick="location.href='./about.html'">ABOUT</button>
-        <button onclick="location.href='./contact.html'">CONTACT</button>
-      </div>
+
+  <body class="home">
+    <header>
+      <nav>
+        <a href="./index.html"><img src="./assets/img/logo.png" alt="Logo"></a>
+        <div class="btn">
+          <button onclick="location.href='./index.html'">Home</button>
+          <button onclick="location.href='./about.html'">About</button>
+          <button onclick="location.href='./game_info.html'">Game info</button>
+          <button onclick="location.href='./rules.html'">RULES</button>
+          <button onclick="location.href='./contact.html'">Contact</button>
+          <button onclick="location.href='./registration.html'">Registration</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="homeSection">
+        <h2>Upcoming Events</h2>
+
+        <div>
+          <article>
+            <h4>August 4</h4>
+            <p>MDSL Fundraiser</p>
+          </article>
+
+          <article>
+            <h4>August 16</h4>
+            <p>Season Kick-off: Meet the Teams</p>
+          </article>
+
+          <article>
+            <h4>September 1</h4>
+            <p>
+              First Game of the Season (Check Game
+              <a href="./schedule.html">Schedule</a> for details)
+            </p>
+          </article>
+        </div>
+      </section>
     </main>
   </body>
 </html>

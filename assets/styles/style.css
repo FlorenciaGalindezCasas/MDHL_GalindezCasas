@@ -56,45 +56,43 @@ button:hover {
   background-color: rgba(243, 232, 30, 0.721);
 }
 
-h1 {
-  font-size: 45px;
-}
-
 .homeSection,
 .aboutSection,
 .contactSection,
+.registrationSection,
 .container-rules,
 .scheduletab {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   text-align: start;
   font-size: 1.25em;
   background-color: rgba(225, 230, 234, 0.701);
   border-radius: 3%;
   width: 60%;
   margin-left: 22%;
-  margin-top: 5%;
+  margin-bottom: 2%;
   padding: 3%;
 }
 
-.principal {
+.maps {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  background-color: rgba(225, 230, 234, 0.701);
+  border-radius: 3%;
+  width: 65%;
+  margin-top: 3%;
+  margin-left: 19%;
+  margin-bottom: 5%;
+  padding: 3%;
+  text-align: center;
 }
 
-.principal button {
-  border: none;
-  cursor: pointer;
-}
-
-.principal img {
-  width: 40%;
-}
-
-.schedule {
+.schedule,
+.rules,
+.registration {
   background: rgba(229, 221, 221, 0.461) url("../img/design2_image1.jpg");
   background-blend-mode: lighten;
 }
@@ -108,11 +106,6 @@ td {
 
 tr {
   text-align: center;
-}
-
-.rules {
-  background: rgba(229, 221, 221, 0.461) url("../img/design2_image1.jpg");
-  background-blend-mode: lighten;
 }
 
 .container-rules {
@@ -135,8 +128,122 @@ tr {
   text-align: center;
 }
 
-footer {
+.registrationSection {
+  text-align: justify;
+}
+
+.registrationSection fieldset {
+  border: none;
   display: flex;
-  justify-content: end;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.registrationSection input {
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  background: none;
+}
+
+.personales,
+.school,
+.position,
+.uniform {
+  padding-bottom: 3%;
+}
+
+.personales {
+  padding-top: 3%;
+}
+
+.personales div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+#school,
+#signature {
+  margin-top: 1%;
+  width: 30%;
+}
+
+#signature {
+  padding-top: 3%;
+}
+
+#date {
+  width: 15%;
+}
+
+.position div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.uniform div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.usize div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0rem;
+}
+
+
+@media only screen and (max-width: 1138px) {
+  .home {
+  background: rgba(229, 221, 221, 0.461) url("../img/hockey_1.jpg");
+  background-size: cover;
+  background-blend-mode: lighten;    
+  }
+  .about {
+  background: rgba(229, 221, 221, 0.461) url("../img/hockey_2.jpg");
+  
+  background-size: cover;
+  background-blend-mode: lighten;
+}
+
+.contact {
+  background: rgba(229, 221, 221, 0.461) url("../img/hockey_3.jpg");
+  
+  background-size: cover;
+  background-blend-mode: lighten;
+}
+}
+
+@media only screen and (max-width: 940px){
+  nav {
+  display: flex;
+  flex-wrap:wrap;
+}
+
+nav img {
+  display:none;
+}
+  .btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
   margin-right: 5%;
+}
+
+button {
+  background-color: rgba(227, 217, 40, 0.438);
+  color: white;
+  width: 80px;
+  height: 25px;
+  font-size: 10px;
+  cursor: pointer;
+  border: none;
+}
+
 }
